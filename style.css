@@ -7,6 +7,9 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-color: #2E2E2E;
+}
 
 .gradient-text {
     background: linear-gradient(90deg,
@@ -18,5 +21,124 @@ html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    padding-bottom: 15px;
 
 }
+
+
+
+header{
+  position: fixed;
+  margin: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background: #2E2E2E;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+.bavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bavbar a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 10;
+    font-size: smaller;
+}
+.hero{
+    background-color: rgb(78, 95, 110);
+}
+
+.hero {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://png.pngtree.com/thumb_back/fh260/background/20200728/pngtree-modern-abstract-wavy-line-topography-contours-background-with-warm-orange-and-image_366647.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-div {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.hero-text {
+    max-width: 800px;
+    color: white;
+}
+
+.about{
+    background-color: #3A3A3A;
+    padding: 50px 10px;
+}
+.about-content p{
+    color: aliceblue;
+    font-size: smaller;
+}
+.about-img{
+    height: 200px;
+    width: auto;
+}
+.about-div{
+
+    display: flex;
+}
+
+.services-div {
+    padding-top: 20px;
+  background-color: #3A3A3A;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.services-content{
+    align-items: center;
+    text-align: center;
+
+}
+.services-para{
+    color: #fff;
+    font-size: smaller;
+}
+.services-cards{
+    display: flex;
+    padding: 30px 40px;
+
+}
+.card{
+    background-color: #9e7c7c;
+    padding: 10px 10px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.testimonials{
+    background-color: darkgrey;
+}
+.testimonials-div{padding: 20px 30px;}
+/* ===== FOOTER ===== */
+.footer { background: #dddfe7; padding: 70px 0 0; border-top: 1px solid var(--border); }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+.footer h3 { font-size: 1.6rem; margin-bottom: 10px; ; -webkit-background-clip: text; background-clip: text; color: transparent; width: fit-content; }
+.footer h4 { margin-bottom: 14px; }
+.footer p, .footer li { color: var(--muted); margin-bottom: 8px; }
+.footer a:hover { color: #fff; }
+.copyright { text-align: center;  padding: 28px 0; margin-top: 40px; ;  }
